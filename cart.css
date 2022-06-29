@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container__cart {
+    margin-top: 20px;
+    padding: 10px;
+}
+.container__cartTable {
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+}
+.container__cartTable th:nth-child(1) {
+    text-align: start;
+}
+.container__cartTable th,
+.container__cartTable td {
+    text-align: center;
+    padding: 10px;
+}
+.container__cartTable--pice {
+    font-weight: 600;
+}
+
+
+.container__cartTable img {
+    width: 100px;
+    height: 100px;
+}
+.container__cartTable td:nth-child(1) {
+    display: flex;
+    align-items: center;
+    width: 524px;
+    margin-right: -266px;
+}
+.amount {
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    justify-content: space-around;
+}
+.container__cartTable--input {
+    width: 40px;
+    text-align: center;
+    border: none;
+}
+.container__cartTable--input:focus-visible {
+    outline: none;
+}
+.container__cartTable--btn {
+    border: none;
+    background-color: white;
+    padding: 8px 15px;
+}
+.container__cartTable--btn:hover {
+    cursor: pointer;
+    background-color: #ccc;
+}
+.container__cartTable--input::-webkit-inner-spin-button {
+    -webkit-appearance:none;
+    margin:0;
+}
+.container__cartTable tbody td{
+    max-height: 120px;
+}
+.container__cartTable tbody td:nth-child(3) {
+    width: 136px;
+}
+.container__cartTable tbody p {
+    padding-left: 10px;
+    text-align: start;
+    flex: 1;
+    max-width: 424px;
+}
+.close {
+    color: #6f6b6b;
+    padding: 10px 5px;
+}
+.close:hover {
+    cursor: pointer;
+    background-color: rgb(234, 234, 234);
+}
+/* cartPay */
+.container__cartPay {
+   margin-top: 10px;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 600;
+}
+.container__cartPay--infor {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.container__cartPay--infor input {
+    padding: 10px ;
+    min-width: 30%;
+}
+.cartPay {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cartPay input {
+    padding: 10px;
+    margin-left: 10px;
+    width: 60%;
+}
+
+.sale {
+    flex: 1;
+}
+.monney {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.monneyPrice p {
+    padding-right: 10px;
+}
+.monneyPrice span {
+    color: rgb(63, 58, 58);
+    font-size: 13px;
+    font-style: italic;
+}
+.monneyPrice div {
+    font-size: 18px;
+}
+.payBtn a{ 
+    text-decoration: none;
+    background-color: #f85d96;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 2px;
+}

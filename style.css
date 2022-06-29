@@ -1,0 +1,462 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* common */
+body {
+    background-color: #f5f5f5;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+.hidden {
+    display: none !important;
+}
+
+.font-bold {
+    font-weight: 600 !important;
+}
+.width-1200 {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.openBlock {
+    display: block !important;
+}
+.openFlex {
+    display: flex !important;
+}
+
+/* headr__navigation */
+.header {
+    background-image: linear-gradient(0,#f586af,#f53f83);
+    height: 120px;
+    /* position: fixed; */
+    /* z-index: 9; */
+    /* top: 0;
+    right: 0;
+    left: 0; */
+}
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px
+
+    
+}
+.header__navbar--list li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+}
+
+.header__navbar--list  li{
+    display: inline-block;
+    padding: 0 8px;
+    
+}
+.header__navbar--noti {
+    position: relative;
+    
+}
+.header__navbar--noti:hover .box {
+    display: block;
+    z-index: 10;
+}
+.box {
+    display: none;
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    box-shadow: 0 0  10px rgba(14, 13, 13, 0.3);
+    padding: 20px;
+    position: absolute;
+    margin: 40px;
+    float: left;
+    border-radius: 2px;
+  }
+.box.arrow-top {
+    margin-top: 15px;
+  }
+  
+.box.arrow-top:after {
+    content: " ";
+    position: absolute;
+    left: 5px;
+    top: -15px;
+    border-top: none;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid #fff;
+  }
+.street {
+    border-left: 2px solid rgba(0, 0, 0, 0.6);
+    height: 18px;
+}
+.header__navbar--list {
+    display: flex;
+    align-items: center;
+}
+.avatar {
+    display: flex;
+    flex-direction: column;
+    margin-top: -2px;
+}
+.avatar:hover {
+    cursor: pointer;
+    background-color: #fff;
+    /* border: 1px solid #ccc; */
+}
+.avatar:hover .account--list{
+    display: flex ;
+}
+.avatar:hover .account__admin {
+    
+}
+.imgAvatar {
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.account__admin {
+    display: flex;
+    width: 160px;
+    padding: 2px 0 ;
+}
+.account--list{
+    /* display: flex; */
+    flex-direction: column;
+    background-color: white;
+    position: relative;
+    z-index: 10;
+    display: none;
+    
+}
+.account--list li{
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.account--list li:hover  {
+    /* padding: 5px 0  ; */
+    background-color: #ccc;
+}
+/* header__wrapper */
+.header__wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 16px;
+}
+.header__logo img{
+    width: 65px;
+}
+.header__search {
+    display: flex;
+    align-items: center;
+    
+}
+.header__form input {
+    width: 755px;
+    height: 36px;
+    border: none;
+    padding: 10px;
+    border-radius:20px ;
+}
+.header__form input:focus-visible {
+    outline: none;
+}
+.search {
+    background-color: #fff;
+    height: 38px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    position: relative;
+    
+}
+.btnSearch{
+    margin-right: 10px;
+    border: none;
+    background-color: red;
+    padding: 4px 8px;
+    border-radius: 3px;
+}
+.btnSearch:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+.header__cart  a{
+    margin-left: 24px;
+    font-size: 26px;
+    color: white;
+}
+/* container__category */
+.container {
+    margin-top: 20px; 
+}
+.container__adv {
+    padding-top: 10px;
+}
+.container__adv a {
+    
+    height: 350px;
+    min-width: 100%;
+    width: 1509px;
+    display: block;
+    background: url(https://cdn.concung.com/img/adds/2022/1655806913-BOBBY-62022-MAINBANNER-PC-TUANLE.png) center center / auto 350px no-repeat;
+}
+.container__category {
+    background-color: #fff;
+    padding: 20px 0;
+}
+.container__category--title {
+    padding: 0 20px;
+}
+.container__category--list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin-top: 32px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+.container__category--list li {
+    text-align: center;
+    width: 120px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container__category--list li:hover {
+    background-color: #ccc !important;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.container__category--list a {
+    text-decoration: none;
+    color: black;
+
+}
+.container__category--list li img {
+    width: 90px;
+    height: 90px;  
+}
+/* container__product */
+.container__product {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+.container__product ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 24px;
+    
+}
+.container__product li {
+    margin: 5px;
+    width: 170px;
+    height: 265px;
+    border: .1px solid #ccc;
+    background-color: #fff;
+    border-radius: 2px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 1px;
+}
+.container__product li:hover {
+    opacity: 0.7;
+}
+.container__product li img {
+    width: 147px;
+    height: 147px;
+    padding: 10px;  
+}
+.container__product li a {
+    text-decoration: none;
+    color: black;
+}
+.price   {
+    color: rgb(254, 37, 37);
+    font-weight: 600;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+.container__product a > p {
+    text-align: start;
+    font-size: 14px;
+    margin-top: 10px;
+    width: 100%;
+    height: 72px;
+    padding: 0 5px;
+}
+.addProduct {
+    display: none;
+    padding: 12px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.addProduct:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+/* footer */
+.footer {
+    background-color: #fdebf2;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 32px;
+}
+.footer ul {
+    list-style-type: none;
+}
+.infor ul li {
+    padding-top: 10px;
+}
+.contact ul li{
+    display: inline-block;
+
+}
+.contact a {
+    font-size: 20px;
+
+}
+/* modal */
+#modal .open {
+    display: flex;
+}
+.modal {
+
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(14, 13, 13, 0.3);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    
+}
+.modal__sign {
+    background-color: #fff;
+    width: 500px;
+    height: 250px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around  ;
+    align-items: center;
+    border-radius: 2px;
+    position: relative;
+}
+.modal h2 {
+    margin-bottom: 20px;
+}
+.modal input {
+    margin-top: 10px;
+    padding: 8px;
+    width: 370px;
+}
+
+.modal .btnSignIn {
+    border: none;
+    font-weight: 600;
+    background-color: red;
+    width: 100px;
+    padding: 8px;
+}
+.modal .btnSignIn:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+.modal__btn {
+    align-self: end;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.modal__btn a {
+    display: flex;
+    align-items: center;
+}
+
+.closeIn,
+.closeOut,
+.closeAdmin {
+    align-self: end;
+    padding: 10px 16px;
+    font-size: 18px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.closeIn:hover,
+.closeOut:hover,
+.closeAdmin:hover {
+    background-color: rgba(255, 0, 0, 0.7);
+    cursor: pointer;
+    
+}
+/* modal__admin */
+
+#modal__adim {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(14, 13, 13, 0.3);
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal__admin--container {
+    background-color: #fff;
+    width: 60%;
+    height: 380px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around  ;
+    align-items: center;
+    border-radius: 2px;
+    position: relative;
+    padding: 32px;
+}
+.modal__admin--container h2 {
+    margin-bottom: 20px;
+}
+.modal__admin--container input {
+    margin-top: 10px;
+    padding: 8px;
+    width: 100%;
+}
+.modal__productBtn {
+    margin-top: 32px;
+    padding: 8px 32px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+}
+.modal__productBtn:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+

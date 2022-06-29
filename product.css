@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: none;
+}
+.containerTT  {
+    background-color: #f5f5f5;
+   padding-top: 32px;
+   /* margin-top: 120px; */
+}
+.containerTT__price {
+    display: flex;
+    background-color: white;
+}
+.containerTT__img {
+    border: 1px solid #ffee8e;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+.containerTT__img img {
+    width: 410px;
+    height: 410px;
+
+}
+.containerTT__product {
+    line-height: 1.6;
+    margin: 20px;
+    min-width: calc(1200px - 410px - 80px);
+    display: flex;
+    flex-direction: column;
+    order: 1;
+}
+.containerTT__product ul {
+    list-style-type: none;
+}
+.containerTT__product--title {
+    min-height: 200px;
+}
+.containerTT__product--title li:nth-child(1) {
+    font-size: 28px;
+    text-align: justify;
+    min-height: 100px;
+    
+}
+.containerTT__product--title li:nth-child(1):first-letter {
+    text-transform: capitalize;
+}
+.containerTT__product--title li:nth-child(2) {
+    background-color: #f2f2f2;
+    width: 100%;
+    padding: 4px 10px;
+    border-radius: 8px;
+    color: red;
+    font-size: 24px;
+    font-weight: 600;
+}
+.containerTT__product--title li:nth-child(3) {
+    margin-top: 10px;
+    opacity: 0.6;
+    font-size: 15px;
+}
+.containerTT__pay {
+    display: flex;
+    order: 1;
+}
+.containerTT__cart {
+    margin-right: 15px;
+    padding: 10px 20px;
+    border: 1px solid #f581ac;
+    background-color: #ffeee8;
+    
+}
+.containerTT__cart:hover  {
+    cursor: pointer;
+}
+.containerTT__cart a {
+    text-decoration: none;
+    color: rgb(247, 76, 105);
+}
+.btnPay {
+    border: none;
+    background-color: #f85d96;
+    font-weight: 600;
+    
+    
+    font-size: 16px;
+}
+.btnPay:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+.btnPay a {
+    padding: 15px 25px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+/* details */
+.containerTT__details {
+    background-color: white;
+    margin-top: 20px;
+    padding: 10px;
+}
+.containerTT__table {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.containerTT__table th,
+.containerTT__table td {
+    display: block;
+    text-align: start;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.containerTT__table thead,
+.containerTT__table tbody {
+    border: 1px solid #ccc;
+    display: flex;
+}
+.containerTT__table tbody,
+.containerTT__table tr {
+    flex: 1; 
+    max-width: 400px;
+    
+}
+.containerTT__table th:nth-child(odd),
+.containerTT__table td:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+.container__detailsProduct {
+    margin: 40px 0;
+}
+.container__detailsProduct p {
+    text-align: justify;
+    line-height: 1.4;
+    padding: 14px;
+    font-size: 18px;
+
+}
+
+
